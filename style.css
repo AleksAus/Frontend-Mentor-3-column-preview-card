@@ -1,0 +1,144 @@
+/* Table of contents
+
+1. Global styles
+2. Typography
+3. Components
+4. Media queries
+
+*/
+
+/*=============
+  Global styles
+  ============= */
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 0.9375rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==========
+  Typography
+  ==========*/
+h3 {
+  font-size: 2.45rem;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  margin-bottom: 2.3rem;
+  }
+
+p,
+button {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  margin-bottom: 5.2rem;
+}
+
+/*======
+  Layout
+  ======*/
+  .main-container {
+    width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards {
+    padding: 3rem 3rem;
+    line-height: 25px;
+  }
+
+  .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  .suv {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 .5rem .5rem 0;
+  }
+
+  footer {
+    color: hsl(212, 21%, 14%);
+    position: absolute;
+    transform: translate(0, 400px);
+  }
+
+/*==========
+  Components
+  ==========*/
+.car-icons {
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  padding: .835em 2em;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 3em;
+}
+
+.btn-one {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-two {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-three {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  background-color: inherit;
+}
+
+/*=============
+  Media queries
+  =============*/
+@media screen and (max-width: 778px) {
+
+  body {
+    height: 100%;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  .main-container {
+    width: 21.733em;
+    margin: 6em 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .sedan {
+    border-radius: 0.5em 0.5em 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+
+footer {
+  display: none;
+}
+}
